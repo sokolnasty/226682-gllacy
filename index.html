@@ -7,7 +7,7 @@
   </head>
   <body>
   <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
        <div class="header-logo">
           <img src="img/logo.png" alt="HTML Academy: Глейси" width="205" height="55">
        </div>
@@ -31,34 +31,64 @@
         </div>
       </div>
    </header>
+
+   
    <main class="container">
    <p>с 10 до 20, ежедневно</p>
    <b>8 812 450-25-25</b>
-   <h1>Крем-брюле и пломбир<br>с малиновым джемом</h1>
-   <a class="button" href="#">Давайте оба!</a>
-   <article>
+
+
+   <div class="index-logo clearfix">
+   <img class="foto" src="img/ice-cream-1.jpg" alt="Крем-брюле" width="305" height="455">
+   <img class="foto" src="img/ice-cream-2.jpg" alt="Малиновый джем" ="305" height="455">
+<h1>Крем-брюле и пломбир<br>с малиновым джемом</h1>
+   <a class="btn" href="#">Давайте оба!</a>
+   </div>
+
+
+    <div class="index-content clearfix">
+       <div class="index-content-left">
+    <h2>Малинка даром!</h2>
+     <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+    <a class="btn" href="#">Хочу варенье!</a>
+    </div>
+    <div class="index-content-right">
+   <h2>Шоколадки даром!</h2>
+     <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+    <a class="btn" href="#">Хочу шоколадки!</a>
+   </div>
+
+
+  <div class="container">
+  <div class="catalog clearfix">
+        <article class="catalog-item">
           <img src="img/orange-jam.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="306" height="206">
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <b>310Р/кг</b>
+          <b class="price">310Р/кг</b>
     </article>
-    <article>
+    <article class="catalog-item">
           <img src="img/chocolate.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="306" height="206">
           <p>Сливочно-кофейное с кусочками шоколада</p>
-          <b>380Р/кг</b>
+          <b class="price">380Р/кг</b>
         </article>
-        <article>
+        <article class="catalog-item">
           <img src="img/strawberry-white-chocolate.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="306" height="206">
           <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-          <b>355Р/кг</b>
+          <b class="price">355Р/кг</b>
         </article>
-        <article>
+        <article class="catalog-item">
           <img src="img/creme-brulee-caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="306" height="206">
           <p>Сливочное крем-брюле с карамельной подливкой</p>
-          <b>415Р/кг</b>
+          <b class="price">415Р/кг</b>
         </article>
-        <section>
-        <b>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</b>
-           <table class="reference">
+        </div>
+    </div>
+
+
+    <div class="container">
+  <section class="features clearfix">
+        <h3>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
+           <table>
            <tr>
           <td>
           <img src="img/11.jpg" alt="мороженое" width="206" height="106">
@@ -74,49 +104,54 @@
           <img src="img/14.jpg" alt="термометр" width="206" height="106">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</td>
         </tr>
       </table>
-        </section>
-        <section>
-          <div class="content">
+ </section>
+</div>
+        
+        
+ <div class="idex-content clearfix">
+   <div class="idex-content-left">
               <p>Новое в нашем блоге</p>
-              <p>10 способов сервировки фруктовых щербетов к столу</p>
+              <h3>10 способов сервировки фруктовых щербетов к столу</h3>
         </div>
-        </section>
-        <div class="feedback">
+      <div class="idex-content-right">
       <p class="feedback-tip">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
       <form class="feedback-form" action="/gllacy-mail" method="post">
         <input type="submit" class="button" value="Отправить">
       </form>
-    </div>
-    <section class="contacts">
-          Адрес главного офиса и<br>
+  </div>
+  </div>
+      
+
+<div class="map clearfix">
+          Адрес главного офиса<br> и
           офлайн магазина:<br>
           <b>ул.Большая Конюшенная<br>
           19/8, Санкт-Петербург</b><br>
           Для заказов по телефону:<br>
           <b>8 812 450-25-25</b><br>
           (с 10 до 20 ежедневно)<br>
-          <a class="button" href="#">Форма обратной связи</a>
-        </section>
-        </main>
-         <footer class="main-footer">
-          <div class="container">
+          <a class="btn" href="#">Форма обратной связи</a>
+</div>
+      </main>  
+
+
+       <footer class="main-footer">
+          <div class="container clearfix">
            <section class="footer-social">
             <a class="social-btn social-btn-twtr" href="#">Твиттер</a>
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           </section>
-          <table class="footer">
-        <tr>
-          <td>Для поставщиков</td>
-          <td>Наши документы</td>
-        </tr>
-        <tr>
-          <td>О производстве</td>
-          <td>Экологические стандарты</td>
-        </tr>
-      </table>
-      <section class="footer-copyright">
+          <section class="footer-info">
+          <p>Для поставщиков</p>
+          <p>Наши документы</p>
+          </section>
+          <section class="footer-info">
+          <p>О производстве</p>
+          <p>Экологические стандарты</p>
+          </section>
+     <section class="footer-copyright">
       <img src="img/htmlacademy.jpg" alt="htmlacademy" width="206" height="106">
           <p>Сделано в</p>
           <a href="https://htmlacademy.ru">HTML Academy©2016</a>
