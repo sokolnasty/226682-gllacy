@@ -261,11 +261,6 @@ h2 {
   min-height: 175px;
 }
 
- img {
-  float: left;
-  margin-right: 10px;
-}
-
 .features-item:last-child {
   margin-right: 0;
 }
@@ -309,9 +304,9 @@ h2 {
 }
 
 .catalog-item {
-  float: left;
-  width: 200px;
-  margin-right: 70px;
+  display: inline-block;
+  width: 270px;
+  margin-right: 10px;
   
   /* Только для оформления сетки */
   min-height: 175px;
@@ -359,6 +354,10 @@ h2 {
    width: 100px;
 }
 
+.breadcrumbs h2 {
+   width: 400px;
+}
+
 .container h1 {
   float: left;
   width: 330px;
@@ -368,7 +367,8 @@ h2 {
 
 .fillers {
   float: left;
-  width: 630px;
+  width: 1000px;
+  margin-bottom: 20px;
 }
 
 .paginator {
@@ -463,21 +463,4 @@ h2 {
     width: 61px;
     height: 61px;
     background-position: -10px -576px;
-}
-
-.content-left {
-    float: left;
-}
-              
-.content-left h3 {
-    text-decoration: underline;
-}    
-
-.content-left p {
-    float: left; 
-    width: 470px;
-}  
-
-.content-right {
-    float: right;
 }
