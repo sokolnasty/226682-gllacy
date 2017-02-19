@@ -3,15 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <base href="/assets/basic_intensive/demos/gllacy/">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
+  <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+    <div class="site-wrapper">
+      <div class="content-wrapper">
   <header class="main-header">
       <div class="container clearfix">
        <div class="header-logo">
-          <img src="img/logotype.png" alt="HTML Academy: Глейси" width="205" height="55">
+          <img src="img/logotype.png" alt="HTML Academy: Глейси" width="154" height="64">
        </div>
        <nav class="main-navigation">
           <ul>
@@ -31,17 +37,29 @@
         </div>
         <a class="basket" href="#">Пусто</a>
         </div>
-      </div>
    </header>
    <main class="container">
    <p>с 10 до 20, ежедневно</p>
    <b>8 812 450-25-25</b>
    <div class="index-logo clearfix">
-   <img class="foto" src="img/ice-cream-1.jpg" alt="Крем-брюле" width="305" height="455">
-   <img class="foto" src="img/ice-cream-2.jpg" alt="Малиновый джем" ="305" height="455">
-<h1>Крем-брюле и пломбир<br>с малиновым джемом</h1>
-   <a class="btn" href="#">Давайте оба!</a>
-   </div>
+   <div class="slider clearfix">
+          <div class="slide" id="slide1">
+            <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
+          </div>
+          <div class="slide" id="slide2">
+            <div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
+          </div>
+          <div class="slide" id="slide3">
+            <div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
+          </div>
+           <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
     <div class="index-content clearfix">
        <div class="index-content-left">
     <h2>Малинка даром!</h2>
@@ -53,28 +71,29 @@
      <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
     <a class="btn" href="#">Хочу шоколадки!</a>
    </div>
+  </div>
   <div class="container">
   <div class="catalog clearfix">
-        <article class="catalog-item">
-          <img src="img/i-orange-jam.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="250" height="200">
+        <div class="catalog-item">
+          <img src="img/i-orange-jam.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267" class="round">
           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-          <b class="price">310&#8381;/кг</b>
-    </article>
-    <article class="catalog-item">
-          <img src="img/i-chocolate.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="250" height="200">
+          <b>310&#8381;/кг</b>
+    </div>
+    <div class="catalog-item">
+          <img src="img/i-chocolate.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267" class="round">
           <p>Сливочно-кофейное с кусочками шоколада</p>
-          <b class="price">380&#8381;/кг</b>
-        </article>
-        <article class="catalog-item">
-          <img src="img/i-strawberry-white-chocolate.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="250" height="200">
+          <b>380&#8381;/кг</b>
+        </div>
+        <div class="catalog-item">
+          <img src="img/i-strawberry-white-chocolate.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267" class="round">
           <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-          <b class="price">355&#8381;/кг</b>
-        </article>
-        <article class="catalog-item">
-          <img src="img/i-creme-brulee-caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="250" height="200">
+          <b>355&#8381;/кг</b>
+        </div>
+        <div class="catalog-item">
+          <img src="img/i-creme-brulee-caramel.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267" class="round">
           <p>Сливочное крем-брюле с карамельной подливкой</p>
-          <b class="price">415&#8381;/кг</b>
-        </article>
+          <b>415&#8381;/кг</b>
+        </div>
         </div>
     </div>
     <div class="container">
@@ -83,17 +102,17 @@
            <table>
            <tr>
           <td>
-          <img src="img/ice-cream.png" alt="мороженое" width="206" height="106">
+          <img src="img/ice-cream.png" alt="мороженое" width="49" height="49">
           Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</td>
           <td>
-          <img src="img/cow.png" alt="корова" width="206" height="106">
+          <img src="img/cow.png" alt="корова" width="49" height="49">
           Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</td>
         </tr>
         <tr>
           <td>
-          <img src="img/leaf.png" alt="лист" width="206" height="106">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</td>
+          <img src="img/leaf.png" alt="лист" width="49" height="49">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</td>
           <td>
-          <img src="img/thermometer.png" alt="термометр" width="206" height="106">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</td>
+          <img src="img/thermometer.png" alt="термометр" width="49" height="49">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</td>
         </tr>
       </table>
  </section>
@@ -112,16 +131,16 @@
   </div>
 <div class="map clearfix">
  <img src="img/pin.png" alt="Пин" width="50" height="100">
-          Адрес главного офиса<br> и
+          <p>Адрес главного офиса<br> и
           офлайн магазина:<br>
           <b>ул.Большая Конюшенная<br>
-          19/8, Санкт-Петербург</b><br>
-          Для заказов по телефону:<br>
+          19/8, Санкт-Петербург</b><br></p>
+          <p>Для заказов по телефону:<br>
           <b>8 812 450-25-25</b><br>
-          (с 10 до 20 ежедневно)<br>
+          (с 10 до 20 ежедневно)<br></p>
           <a class="btn" href="#">Форма обратной связи</a>
 </div>
-      </main>  
+   </main>  
        <footer class="main-footer">
           <div class="container clearfix">
            <section class="footer-social">
@@ -139,11 +158,73 @@
           <p>Экологические стандарты</p>
           </section>
      <section class="footer-copyright">
-      <img src="img/htmlacademy.png" alt="htmlacademy" width="206" height="106">
+      <img src="img/htmlacademy.png" alt="htmlacademy" width="108" height="38">
           <p>Сделано в</p>
-          <a href="https://htmlacademy.ru">HTML Academy©2016</a>
+          <a href="https://htmlacademy.ru">HTML Academy&#169;2016</a>
         </section>
       </div>
     </footer>
+    <input class="icon-user" type="text" name="login" placeholder="Что ищем?">
+    <div class="modal-content">
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="icon-user" type="text" name="login" placeholder="Электронная почта">
+        <input class="icon-password" type="password"  name="password" placeholder="Пароль">
+        <a class="restore" href="#">Забыли пароль?</a>
+        <a class="restore" href="#">Новая регистрация</a>
+        <button class="btn" type="submit">Войти</button>
+      </form>
+    </div>
+    <script>
+      var link = document.querySelector(".login");
+
+      var popup = document.querySelector(".modal-content");
+      var close = popup.querySelector(".modal-content-close");
+
+      var form = popup.querySelector("form");
+      var login = popup.querySelector("[name=login]");
+      var password = popup.querySelector("[name=password]");
+
+      var storage = localStorage.getItem("login");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+
+        if (storage) {
+          login.value = storage;
+          password.focus();
+        } else {
+          login.focus();
+        }
+
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+        popup.classList.remove("modal-error");
+      });
+
+      form.addEventListener("submit", function(event) {
+        if (!login.value || !password.value) {
+          event.preventDefault();
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          popup.classList.add("modal-error");
+        } else {
+          localStorage.setItem("login", login.value);
+        }
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("modal-content-show")) {
+            popup.classList.remove("modal-content-show");
+            popup.classList.remove("modal-error");
+          }
+        }
+      });
+    </script>
+    <input class="icon-user" type="text" name="login" placeholder="Что ищем?">
   </body>
 </html>
